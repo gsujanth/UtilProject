@@ -1,7 +1,5 @@
 package com.sujanth.utils.Base64.utils;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.UUID;
@@ -54,8 +52,8 @@ public class Base64Util {
 	public String decode() {
 		byte[] decodedBytes1 = Base64.getDecoder().decode(encodeToString());
 		String decodedString1 = new String(decodedBytes1);
-		byte[] decodedBytes2 = Base64.getDecoder().decode(encodeWithoutPadding());
-		String decodedString2 = new String(decodedBytes2);
+		//byte[] decodedBytes2 = Base64.getDecoder().decode(encodeWithoutPadding());
+		//String decodedString2 = new String(decodedBytes2);
 		return decodedString1;
 	}
 

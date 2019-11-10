@@ -19,6 +19,7 @@ public class UDPImpl {
 			while (status == 0) {
 				if (first) {
 					client = new Client(5000);
+					client.getAllIPAddresses();
 					status = client.sendMessage();
 					first = false;
 				} else {

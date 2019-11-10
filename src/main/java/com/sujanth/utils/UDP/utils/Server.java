@@ -46,6 +46,7 @@ public class Server extends Thread {
 		while (running) {
 			try {
 				// DatagramPacket to receive message
+				Thread.sleep(50);
 				DatagramPacket receivedPacket = new DatagramPacket(receiveData, packetLength);
 				System.out.println("UDP Server waiting for incoming messages and " + "accepts packets of length "
 						+ packetLength + "....\n");

@@ -45,12 +45,14 @@ public class Client {
 	}
 
 	public InetAddress[] getAllIPAddresses() {
+		System.out.println("getAllIPAddresses()\n");
 		InetAddress[] google = null;
 		try {
 			google = InetAddress.getAllByName("google.com");
 			for (InetAddress addr : google) {
 				System.out.println(addr.getHostAddress());
 			}
+			System.out.println();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -74,7 +76,7 @@ public class Client {
 				System.out.println("Enter\n"
 						+ "1. message to be sent to server\n"
 						+ "2. \"close\" to close the client \n"
-						+ "3. \"end\" to close the server");
+						+ "3. \"end\" to close the server\n");
 				message = inFromUser.readLine();
 				
 				if(message.equalsIgnoreCase("close")) {
