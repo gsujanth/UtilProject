@@ -1,4 +1,4 @@
-package com.sujanth.utils.Base64.utils;
+package com.sujanth.utils.base64utils;
 
 import java.util.Arrays;
 import java.util.Base64;

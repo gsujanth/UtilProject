@@ -1,4 +1,4 @@
-package com.sujanth.utils.sort.utils;
+package com.sujanth.utils.sortutils;
 
 import java.util.ArrayList;
 import java.util.Collections;

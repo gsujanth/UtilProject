@@ -1,4 +1,4 @@
-package com.sujanth.utils.TCP.utils;
+package com.sujanth.utils.tcputils;
 
 //Author : Sujanth Babu Guntupalli , ID : 800987789
 import java.io.*;

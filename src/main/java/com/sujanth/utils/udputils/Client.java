@@ -1,4 +1,4 @@
-package com.sujanth.utils.UDP.utils;
+package com.sujanth.utils.udputils;
 
 import java.io.*;
 import java.net.DatagramPacket;

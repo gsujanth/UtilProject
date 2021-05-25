@@ -1,4 +1,4 @@
-package com.sujanth.utils.AuthUtil;
+package com.sujanth.utils.authutils;
 
 import io.jsonwebtoken.SignatureAlgorithm;
 

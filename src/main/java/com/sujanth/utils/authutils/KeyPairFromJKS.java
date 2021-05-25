@@ -1,4 +1,4 @@
-package com.sujanth.utils.AuthUtil;
+package com.sujanth.utils.authutils;
 
 import java.io.File;
 import java.io.FileInputStream;

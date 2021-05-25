@@ -1,4 +1,4 @@
-package com.sujanth.utils.TCP.utils;
+package com.sujanth.utils.tcputils;
 
 import java.io.*;
 
