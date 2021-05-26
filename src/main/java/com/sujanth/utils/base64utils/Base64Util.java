@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.UUID;
 
+import org.json.JSONObject;
+
 public class Base64Util {
 
 	public String encodeToString() {
@@ -96,6 +98,12 @@ public class Base64Util {
 		System.out.println(encodedMime+"\n");
 		String decodedMime = decodeMIME(encodedMime);
 		System.out.println(decodedMime);
+	}
+	
+	public static String parseTokenForAnAttribute(String token, String attributeName) {
+		String[] tokenSplits = token.split("\\.");
+		JSONObject jsonObject = new JSONObject(new String(Base64.getDecoder().decode(tokenSplits[1])));
+		return ((String) jsonObject.get(attributeName)).toUpperCase();
 	}
 	
 	public static void main(String[] args) {
